@@ -1,0 +1,220 @@
+*{
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+/* stick the footer to the bottom*/
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.Site-content {flex: 1;}
+/*======================================================*/
+/* header */
+#mainLogo{
+	margin-left: 4vw;
+}
+#mainMenu{
+	margin-right: 4vw;
+}
+/*======================================================*/
+/* slider */
+.slider{
+	margin-top: 1vh;
+}
+
+.slider .indicators .indicator-item.active{
+	background-color: #42A5F5;
+}
+
+.slider-images{
+	box-shadow:0 0 0 500px rgba(0, 0, 0, 0.30) inset;
+}
+/*======================================================*/
+/* contacts */
+
+.contacts{
+	margin: 0 7vw;
+	min-height: 300px;
+
+}
+.contact-card{
+	border-left: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+/*======================================================*/
+/* Catalog style*/
+
+.catalog-block{
+	min-height: 300px;
+	margin: 20px 4vw;
+}
+#order-btn {
+	text-transform: capitalize;
+	color: #039be5;
+}
+.waves-effect.waves-blue .waves-ripple{
+	background-color: #42A5F5;
+}
+.card-title {
+	text-shadow: 0 0 5px grey, 0 0 10px grey, 0 0 15px grey, 0 0 15px black, 0 0 30px black, 0 0 35px black, 0 0 45px black, 0 0 60px black;
+}
+li{
+	list-style:none;
+}
+
+/* label focus color */
+#field-input input:focus + label{
+  color:#039be5;
+}
+/* label underline focus color */
+#field-input input:focus{
+  border-bottom: 1px solid #039be5;
+  box-shadow: 0 1px 0 0 #039be5;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+     color:#039be5;
+   }
+/*======================================================*/
+/* about */
+.about-content{
+	min-height: 300px;
+	margin: 20px 4vw;
+}
+.about-main{
+	margin-right: 5vw;
+}
+.ab-img{
+	margin: 2vw;
+	margin-left: 2vw;
+	width: 400px;
+	height: 250px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+.underroof{
+	background-image: url(../img/poolunderroof.jpg);	
+}
+.installpool{
+	background-image: url(../img/installingpool.jpg);	
+}
+.bobcat{
+	background-image: url(../img/bobcat.jpg);	
+}
+
+/*======================================================*/
+/*price style*/
+
+@import url(https://fonts.googleapis.com/css?family=Cookie);
+
+[v-cloak] {
+  display: none;
+}
+
+
+
+a:hover{
+	text-decoration:none;
+}
+
+section, footer, header, aside, nav{
+	display: block;
+}
+
+/*-------------------------
+	Форма заказа
+--------------------------*/
+
+form#price{
+	background-color: #42A5F5;
+	border-radius: 2px;
+	box-shadow: 0 1px 1px #ccc;
+	width: 66%;
+	padding: 35px 60px;
+	margin: 50px auto;
+}
+
+form#price h2{
+	color:#fff;
+	font-size:64px;
+	font-family:'Cookie', cursive;
+	font-weight: normal;
+	line-height:1;
+	text-shadow:0 3px 0 rgba(0,0,0,0.1);
+}
+
+form#price ul{
+	list-style:none;
+	color:#fff;
+	font-size:20px;
+	font-weight:bold;
+	text-align: left;
+	margin:20px 0 15px;
+}
+
+form#price ul li{
+	padding:20px 30px;
+	background-color:#e35885;
+	margin-bottom:8px;
+	box-shadow:0 1px 1px rgba(0,0,0,0.1);
+	cursor:pointer;
+}
+
+form#price ul li span{
+	float:right;
+}
+
+form#price ul li.active{
+	background-color:#8ec16d;
+}
+
+div.total{
+	border-top:1px solid rgba(255,255,255,0.5);
+	padding:15px 30px;
+	font-size:20px;
+	font-weight:bold;
+	text-align: left;
+	color:#fff;
+}
+
+div.total span{
+	float:right;
+}
+.tooltip input#parameters{
+	list-style:none;
+	color:#fff;
+	font-size:20px;
+	font-weight:bold;
+	text-align: left;
+	margin:20px 0 15px;
+}
+#parameters{
+	border-bottom:2px solid #9E9E9E;
+}
+#parameters:focus{
+	border-bottom: 2px solid #1B71C6;
+	-webkit-box-shadow: none;
+    box-shadow: none; 
+	}  
+
+/*======================================================*/
+/* media */
+@media only screen and (max-width: 992px){
+	#mainLogo{
+		margin-left: 0;
+	}
+	.contacts-card{
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (max-width:600px){
+	.contact-card{
+		border-top: 1px solid rgba(0, 0, 0, 0.10);
+		border-left: none;
+
+	}
+}
